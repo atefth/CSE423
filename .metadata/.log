@@ -16,3 +16,24 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2014-06-03 16:16:24.797
 !MESSAGE Indexed 'simple' (0 sources, 76 headers) in 0.62 sec: 2,139 declarations; 2,375 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+!SESSION 2014-06-04 16:14:18.558 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_31
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-06-04 16:27:47.320
+!MESSAGE Indexed 'animation' (0 sources, 76 headers) in 0.51 sec: 2,139 declarations; 2,375 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.debug.core 4 105 2014-06-04 16:35:23.026
+!MESSAGE A program file was not specified in the launch configuration.
+!SESSION 2014-06-04 16:48:57.519 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_31
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-06-04 16:48:59.953
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

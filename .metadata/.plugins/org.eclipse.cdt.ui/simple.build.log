@@ -2,6 +2,15 @@
 **** Build of configuration Debug for project simple ****
 
 make all 
-make: Nothing to be done for `all'.
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: simple
+Invoking: Cross G++ Linker
+g++  -o "simple"  ./main.o   -lglut -lGLU
+Finished building target: simple
+ 
 
 **** Build Finished ****

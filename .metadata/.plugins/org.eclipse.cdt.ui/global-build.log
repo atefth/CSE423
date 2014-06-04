@@ -1,5 +1,5 @@
 
-**** Build of configuration Debug for project simple ****
+**** Build of configuration Debug for project animation ****
 
 make all 
 Building file: ../main.cpp
@@ -7,17 +7,91 @@ Invoking: Cross G++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
 Finished building: ../main.cpp
  
-Building target: simple
+Building target: animation
 Invoking: Cross G++ Linker
-g++  -o "simple"  ./main.o   -lglut -lGLU
-Finished building target: simple
+g++  -o "animation"  ./main.o   -lGL -lglut
+Finished building target: animation
  
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project simple ****
+**** Build of configuration Debug for project animation ****
 
 make all 
 make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project animation ****
+
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: animation
+Invoking: Cross G++ Linker
+g++  -o "animation"  ./main.o   -lGL -lglut
+Finished building target: animation
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project animation ****
+
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void display()’:
+../main.cpp:13:8: warning: unused variable ‘x3’ [-Wunused-variable]
+../main.cpp:14:8: warning: unused variable ‘y3’ [-Wunused-variable]
+../main.cpp:15:8: warning: unused variable ‘x4’ [-Wunused-variable]
+../main.cpp:16:8: warning: unused variable ‘y4’ [-Wunused-variable]
+Finished building: ../main.cpp
+ 
+Building target: animation
+Invoking: Cross G++ Linker
+g++  -o "animation"  ./main.o   -lGL -lglut
+Finished building target: animation
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project animation ****
+
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void display()’:
+../main.cpp:13:8: warning: unused variable ‘x3’ [-Wunused-variable]
+../main.cpp:14:8: warning: unused variable ‘y3’ [-Wunused-variable]
+../main.cpp:15:8: warning: unused variable ‘x4’ [-Wunused-variable]
+../main.cpp:16:8: warning: unused variable ‘y4’ [-Wunused-variable]
+Finished building: ../main.cpp
+ 
+Building target: animation
+Invoking: Cross G++ Linker
+g++  -o "animation"  ./main.o   -lGL -lglut
+Finished building target: animation
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project animation ****
+
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: animation
+Invoking: Cross G++ Linker
+g++  -o "animation"  ./main.o   -lGL -lglut
+Finished building target: animation
+ 
 
 **** Build Finished ****
