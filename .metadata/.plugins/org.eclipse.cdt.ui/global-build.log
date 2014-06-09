@@ -1,5 +1,5 @@
 
-**** Build of configuration Debug for project animation ****
+**** Build of configuration Debug for project assign1_task2 ****
 
 make all 
 Building file: ../main.cpp
@@ -7,22 +7,22 @@ Invoking: Cross G++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
 Finished building: ../main.cpp
  
-Building target: animation
+Building target: assign1_task2
 Invoking: Cross G++ Linker
-g++  -o "animation"  ./main.o   -lGL -lglut
-Finished building target: animation
+g++  -o "assign1_task2"  ./main.o   -lglut -lGL
+Finished building target: assign1_task2
  
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project animation ****
+**** Build of configuration Debug for project assign1_task2 ****
 
 make all 
 make: Nothing to be done for `all'.
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project animation ****
+**** Build of configuration Debug for project assign1_task2 ****
 
 make all 
 Building file: ../main.cpp
@@ -30,57 +30,47 @@ Invoking: Cross G++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
 Finished building: ../main.cpp
  
-Building target: animation
+Building target: assign1_task2
 Invoking: Cross G++ Linker
-g++  -o "animation"  ./main.o   -lGL -lglut
-Finished building target: animation
+g++  -o "assign1_task2"  ./main.o   -lglut -lGL
+Finished building target: assign1_task2
  
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project animation ****
+**** Build of configuration Debug for project assign1_task2 ****
 
 make all 
 Building file: ../main.cpp
 Invoking: Cross G++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
-../main.cpp: In function ‘void display()’:
-../main.cpp:13:8: warning: unused variable ‘x3’ [-Wunused-variable]
-../main.cpp:14:8: warning: unused variable ‘y3’ [-Wunused-variable]
-../main.cpp:15:8: warning: unused variable ‘x4’ [-Wunused-variable]
-../main.cpp:16:8: warning: unused variable ‘y4’ [-Wunused-variable]
 Finished building: ../main.cpp
  
-Building target: animation
+Building target: assign1_task2
 Invoking: Cross G++ Linker
-g++  -o "animation"  ./main.o   -lGL -lglut
-Finished building target: animation
+g++  -o "assign1_task2"  ./main.o   -lglut -lGL
+Finished building target: assign1_task2
  
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project animation ****
+**** Build of configuration Debug for project assign1_task2 ****
 
 make all 
 Building file: ../main.cpp
 Invoking: Cross G++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
-../main.cpp: In function ‘void display()’:
-../main.cpp:13:8: warning: unused variable ‘x3’ [-Wunused-variable]
-../main.cpp:14:8: warning: unused variable ‘y3’ [-Wunused-variable]
-../main.cpp:15:8: warning: unused variable ‘x4’ [-Wunused-variable]
-../main.cpp:16:8: warning: unused variable ‘y4’ [-Wunused-variable]
 Finished building: ../main.cpp
  
-Building target: animation
+Building target: assign1_task2
 Invoking: Cross G++ Linker
-g++  -o "animation"  ./main.o   -lGL -lglut
-Finished building target: animation
+g++  -o "assign1_task2"  ./main.o   -lglut -lGL
+Finished building target: assign1_task2
  
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project animation ****
+**** Build of configuration Debug for project assign1_task2 ****
 
 make all 
 Building file: ../main.cpp
@@ -88,10 +78,247 @@ Invoking: Cross G++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
 Finished building: ../main.cpp
  
-Building target: animation
+Building target: assign1_task2
 Invoking: Cross G++ Linker
-g++  -o "animation"  ./main.o   -lGL -lglut
-Finished building target: animation
+g++  -o "assign1_task2"  ./main.o   -lglut -lGL
+Finished building target: assign1_task2
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assign1_task2 ****
+
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: assign1_task2
+Invoking: Cross G++ Linker
+g++  -o "assign1_task2"  ./main.o   -lglut -lGL
+Finished building target: assign1_task2
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assign1_task2 ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assign1_task2 ****
+
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: assign1_task2
+Invoking: Cross G++ Linker
+g++  -o "assign1_task2"  ./main.o   -lglut -lGL
+Finished building target: assign1_task2
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assign1_task2 ****
+
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: assign1_task2
+Invoking: Cross G++ Linker
+g++  -o "assign1_task2"  ./main.o   -lglut -lGL
+Finished building target: assign1_task2
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assign1_task2 ****
+
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: assign1_task2
+Invoking: Cross G++ Linker
+g++  -o "assign1_task2"  ./main.o   -lglut -lGL
+Finished building target: assign1_task2
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assign1_task2 ****
+
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void onMouseDown(int, int, int, int)’:
+../main.cpp:44:30: error: ‘printf’ was not declared in this scope
+make: *** [main.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assign1_task2 ****
+
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘void onMouseDown(int, int, int, int)’:
+../main.cpp:45:30: error: ‘printf’ was not declared in this scope
+make: *** [main.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assign1_task2 ****
+
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: assign1_task2
+Invoking: Cross G++ Linker
+g++  -o "assign1_task2"  ./main.o   -lglut -lGL
+Finished building target: assign1_task2
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assign1_task2 ****
+
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: assign1_task2
+Invoking: Cross G++ Linker
+g++  -o "assign1_task2"  ./main.o   -lglut -lGL
+Finished building target: assign1_task2
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assign1_task2 ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assign1_task2 ****
+
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: assign1_task2
+Invoking: Cross G++ Linker
+g++  -o "assign1_task2"  ./main.o   -lglut -lGL
+Finished building target: assign1_task2
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assign1_task2 ****
+
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: assign1_task2
+Invoking: Cross G++ Linker
+g++  -o "assign1_task2"  ./main.o   -lglut -lGL
+Finished building target: assign1_task2
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assign1_task2 ****
+
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: assign1_task2
+Invoking: Cross G++ Linker
+g++  -o "assign1_task2"  ./main.o   -lglut -lGL
+Finished building target: assign1_task2
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assign1_task2 ****
+
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: assign1_task2
+Invoking: Cross G++ Linker
+g++  -o "assign1_task2"  ./main.o   -lglut -lGL
+Finished building target: assign1_task2
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assign1_task2 ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assign1_task2 ****
+
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: assign1_task2
+Invoking: Cross G++ Linker
+g++  -o "assign1_task2"  ./main.o   -lglut -lGL
+Finished building target: assign1_task2
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project assign1_task2 ****
+
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: assign1_task2
+Invoking: Cross G++ Linker
+g++  -o "assign1_task2"  ./main.o   -lglut -lGL
+Finished building target: assign1_task2
  
 
 **** Build Finished ****
