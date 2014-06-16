@@ -57,7 +57,7 @@ int main (int argc, char *argv[]){
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_RGB | GLUT_DEPTH | GLUT_DOUBLE);
 	glutInitWindowSize(800, 600);
-	glutCreateWindow("Animation");
+	glutCreateWindow("Flag");
 	setup();
 	glutDisplayFunc(display);
 	glutMainLoop();
