@@ -1,9 +1,15 @@
 #include <GL/glut.h>
 #include <math.h>
+#include <unistd.h>
 #define PI 3.14159
 
 const float RAD = PI/180;
 float angle = 0.0;
+float width = 0.05;
+float height = 0.5;
+float radius = 0.1;
+bool isOn = false;
+float maxSpeed = 5;
 
 void drawAnyCircle(float radius, int angleStart, int angleEnd, float x, float y){
 	glColor3f(1.0f, 0.0f, 0.0f);
@@ -83,17 +89,72 @@ void drawFanEfficiently(){
 
 }
 
+void reachNormalSpeed(){
+	if(angle < maxSpeed){
+		angle+= 0.01;
+	}
+}
+
+void reachZeroSpeed(){
+	if(angle > 0){
+		angle-= 0.05;
+	}
+}
+
 void rotate(){
-	glPushMatrix();
-	angle+= 5.0;
-	glRotatef(angle, 0.0f, 1.0f , 0.0f);
-	glPopMatrix();
+	if(isOn){
+		reachNormalSpeed();
+	}else{
+		reachZeroSpeed();
+	}
+	glutPostRedisplay();
 }
 
 void display(){
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	drawFan(0.05, 0.5, 0.10);
+	glRotatef(angle, 0.0f, 0.0f , 1.0f);
+	glPushMatrix();
+	drawFan(width, height, 0.10);
+	glPopMatrix();
 	glutSwapBuffers();
+}
+
+void speedFanUp(){
+	maxSpeed += 0.5;
+}
+
+void speedFanDown(){
+	maxSpeed -= 0.5;
+}
+
+void startFan(){
+	isOn = true;
+}
+
+void stopFan(){
+	isOn = false;
+}
+
+void onKeyPress(unsigned char key, int x, int y){
+	switch (key){
+
+	case 27:
+		exit(0);
+		break;
+	case 'u':
+		speedFanUp();
+		break;
+	case 'd':
+		speedFanDown();
+		break;
+	case 's':
+		if(!isOn){
+			startFan();
+		}else{
+			stopFan();
+		}
+		break;
+	}
 }
 
 int main (int argc, char *argv[]){
@@ -103,5 +164,6 @@ int main (int argc, char *argv[]){
 	glutCreateWindow("Fan");
 	glutDisplayFunc(display);
 	glutIdleFunc(rotate);
+	glutKeyboardFunc(onKeyPress);
 	glutMainLoop();
 }
