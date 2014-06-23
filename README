@@ -1,2 +1,10 @@
 This repository contains the code for the course CSE423 for
 Summer of 2014.
+
+Assignment 2
+Task 2
+
+Press 's' to start or stop the fan
+Press 'u' to speed up the fan
+Press 'd' to speed down the fan
+Press Escape to exit the program

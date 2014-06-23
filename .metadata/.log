@@ -64,3 +64,15 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2014-06-16 11:58:16.939
 !MESSAGE Indexed 'assign_2_task1' (0 sources, 76 headers) in 0.89 sec: 2,139 declarations; 2,375 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+!SESSION 2014-06-23 09:29:50.490 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_31
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-06-23 11:31:33.631
+!MESSAGE Indexed 'assign_2task2' (0 sources, 76 headers) in 0.44 sec: 2,139 declarations; 2,375 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-06-23 11:32:33.069
+!MESSAGE Indexed 'assign_2_task2' (1 sources, 102 headers) in 0.82 sec: 14,626 declarations; 20,996 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
