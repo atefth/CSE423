@@ -1,0 +1,15 @@
+02:48:22 **** Incremental Build of configuration Debug for project solarSystem ****
+make all 
+Building file: ../main.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: solarSystem
+Invoking: Cross G++ Linker
+g++  -o "solarSystem"  ./main.o   -lglut -lGL -lGLU
+Finished building target: solarSystem
+ 
+
+02:48:23 Build Finished (took 416ms)
+
