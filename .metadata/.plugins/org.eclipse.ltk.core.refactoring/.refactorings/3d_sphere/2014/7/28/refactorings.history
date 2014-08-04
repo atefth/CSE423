@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;3d_sphere/3DSphere&apos; to &apos;3DSphere.cpp&apos;" description="Rename resource &apos;3DSphere&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="3DSphere" name="3DSphere.cpp" stamp="1404699291079" updateReferences="true"/>
+</session>

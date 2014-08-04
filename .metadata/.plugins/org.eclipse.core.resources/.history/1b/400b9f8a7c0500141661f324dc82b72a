@@ -1,0 +1,8 @@
+class 3DSphere{
+
+protected:
+	vector<GLfloat> vertices;
+
+public:
+
+};

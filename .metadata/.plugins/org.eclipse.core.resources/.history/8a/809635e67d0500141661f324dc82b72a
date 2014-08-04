@@ -1,0 +1,39 @@
+#include <GL/glut.h>
+#include <math.h>
+#include <vector>
+#define PI 3.14159
+
+GLuint texture[1];
+double angle = 0;
+
+const space = 10;
+const vertexCount = (90/space)*(360/space)*4;
+
+typedef struct{
+	int x;
+	int y;
+	int z;
+
+	double u;
+	double v;
+}Vertices;
+
+Vertices Vertex[vertexCount];
+
+void drawSphere(float radius, unsigned int rings, unsigned int sectors){
+
+	glClear(GL_COLOR_BUFFER_BIT);
+
+	glFlush();
+}
+
+void draw(){
+	drawSphere(2, 5, 10);
+}
+
+int main(int argc, char** argv){
+	glutInit(&argc, argv);
+	glutCreateWindow("simple");
+	glutDisplayFunc(draw);
+	glutMainLoop();
+}

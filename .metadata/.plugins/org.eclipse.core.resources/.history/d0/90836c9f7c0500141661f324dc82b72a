@@ -1,0 +1,26 @@
+#include <GL/glut.h>
+#include <math.h>
+#include <vector>
+
+
+void drawSphere(float radius, unsigned int rings, unsigned int sectors){
+	float const R = 1./(float)(rings-1);
+	float const S = 1./(float)(sectors-1);
+	int r, s;
+
+
+	glClear(GL_COLOR_BUFFER_BIT);
+
+	glFlush();
+}
+
+void draw(){
+	drawSphere(2, 5, 10);
+}
+
+int main(int argc, char** argv){
+	glutInit(&argc, argv);
+	glutCreateWindow("simple");
+	glutDisplayFunc(draw);
+	glutMainLoop();
+}

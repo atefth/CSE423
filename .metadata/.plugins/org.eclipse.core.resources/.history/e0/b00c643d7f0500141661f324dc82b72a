@@ -1,0 +1,25 @@
+#include <GL/glut.h>
+#include <math.h>
+#include <vector>
+#define PI 3.14159
+
+double user_theta = 0;
+double user_height = 0;
+
+void drawSphere(float radius, unsigned int rings, unsigned int sectors){
+
+
+}
+
+void draw(){
+	glClear(GL_COLOR_BUFFER_BIT);
+	drawSphere(2, 5, 10);
+	glFlush();
+}
+
+int main(int argc, char** argv){
+	glutInit(&argc, argv);
+	glutCreateWindow("simple");
+	glutDisplayFunc(draw);
+	glutMainLoop();
+}
