@@ -1,20 +1,76 @@
 #include <GL/glut.h>
+#include <math.h>
+
+double cameraAngle = 0;
+double cameraAngleDelta = 0.012;
+
+double cameraHeight = 100;
+double cameraRadius = 150;
+
+double rectAngle;
+
+GLfloat lightpos[] = {0, 1, -0.5, 0};
+
+void drawSphere(){
+	GLfloat green[] = {0.1f, .9f, .1f, 1.f};
+	glMaterialfv(GL_FRONT, GL_DIFFUSE, green);
+	glNormal3d(1, 0, 0);
+	glScalef(1.5, 1.5, 1.5);
+	glutSolidSphere(25, 50, 50);
+}
 
 void draw(){
 
-	//clear the display
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	glClearColor(0, 0, 0, 0);
+	glClearColor(1, 1, 1, 0);	//color black
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
 
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	glColor3f(1.0, 0.0, 0.0);
-	glutSolidSphere(0.5, 10,10);
+	gluLookAt(cameraRadius*cos(cameraAngle), cameraRadius*sin(cameraAngle), cameraHeight, 0, 0, 0, 0,0,0.5);
+
+	glMatrixMode(GL_MODELVIEW);
+
+	glPushMatrix();{
+		drawSphere();
+	}glPopMatrix();
+
 	glutSwapBuffers();
+}
+
+void setCamera(){
+	glClearColor(0, 0, 0, 0);
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	gluPerspective(50, 1, 0.5, 10000);
+}
+
+void setLightAngle(){
+	glLightfv(GL_LIGHT0, GL_POSITION, lightpos);
+}
+
+void setLighting(){
+	glEnable(GL_LIGHTING);
+	glEnable(GL_LIGHT0);
+	setLightAngle();
+}
+
+void revolve(){
+	cameraAngle += cameraAngleDelta;
+	rectAngle -= 1;
+	setLightAngle();
+	glutPostRedisplay();
 }
 
 int main(int argc, char** argv){
 	glutInit(&argc, argv);
+	glutInitWindowSize(500, 500);
+	glutInitWindowPosition(0, 0);
+	glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGB);	//Depth, Double buffer, RGB color
 	glutCreateWindow("sphere");
+	setCamera();
+	setLighting();
 	glutDisplayFunc(draw);
+	glutIdleFunc(revolve);
 	glutMainLoop();
 }

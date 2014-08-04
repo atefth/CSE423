@@ -1,0 +1,104 @@
+#include <GL/glut.h>
+#include <math.h>
+
+double cameraAngle = 0;
+double cameraAngleDelta = 0.012;
+
+double cameraHeight = 100;
+double cameraRadius = 150;
+
+double rectAngle = 0;
+double angle = 0;
+
+GLfloat lightpos[] = {0, 1, -0.5, 0};
+
+GLfloat mercury[] = {0.3f, .6f, .1f, 1.f};
+GLfloat sun[] = {0.5f, .6f, .1f, 1.f};
+GLfloat venus[] = {0.9f, .1f, .1f, 1.f};
+GLfloat earth[] = {0.1f, .4f, .8f, 1.f};
+
+void drawSphere(int radius, float scale, GLfloat color[], float x, float y, float z){
+	glMaterialfv(GL_FRONT, GL_DIFFUSE, color);
+	glNormal3d(1, 0, 0);
+	glTranslatef(x,y,z);
+	glScalef(scale, scale, scale);
+	glutSolidSphere(radius, 50, 50);
+}
+
+void drawSolarSystem(){
+	glPushMatrix();{
+		drawSphere(20, 1, sun, 0, 0, 0);
+	}glPopMatrix();
+	glPushMatrix();{
+		drawSphere(20, 0.2, mercury, -10, 0, 0);
+	}glPopMatrix();
+	glPushMatrix();{
+		drawSphere(20, 0.3, venus, -30, 0, 0);
+	}glPopMatrix();
+	glPushMatrix();{
+		drawSphere(20, 0.5, earth, -60, 0, 0);
+	}glPopMatrix();
+}
+
+void draw(){
+
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	glClearColor(0.2, 0.2, 0.2, 0);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+
+	gluLookAt(cameraRadius*cos(cameraAngle), cameraRadius*sin(cameraAngle), cameraHeight,
+			0, 0, 1,
+			0,0,1);
+
+	glMatrixMode(GL_MODELVIEW);
+
+	glPushMatrix();{
+		glRotatef(angle, 0, 0, 1);
+		drawSolarSystem();
+	}glPopMatrix();
+
+	glutSwapBuffers();
+}
+
+void setCamera(){
+	glClearColor(0, 0, 0, 0);
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	gluPerspective(50, 1, 0.5, 10000);
+}
+
+void setLightAngle(){
+	glLightfv(GL_LIGHT0, GL_POSITION, lightpos);
+}
+
+void setLighting(){
+	glEnable(GL_LIGHTING);
+	glEnable(GL_LIGHT0);
+	setLightAngle();
+}
+
+void revolve(){
+	cameraAngle += cameraAngleDelta;
+	rectAngle -= 1;
+	angle += 2.f;
+	if (rectAngle == 360.f) {
+		rectAngle = -360.f;
+	}
+	setLightAngle();
+	glutPostRedisplay();
+}
+
+int main(int argc, char** argv){
+	glutInit(&argc, argv);
+	glutInitWindowSize(500, 500);
+	glutInitWindowPosition(0, 0);
+	glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGB);	//Depth, Double buffer, RGB color
+	glutCreateWindow("solar system");
+	setCamera();
+	setLighting();
+	glutDisplayFunc(draw);
+	glutIdleFunc(revolve);
+	glutMainLoop();
+}

@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <session version="1.0">
+<<<<<<< HEAD
 <refactoring comment="Delete resource &apos;3d_sphere/3DSphere.cpp&apos;" deleteContents="false" description="Delete resource &apos;3d_sphere/3DSphere.cpp&apos;" element1="/3d_sphere/3DSphere.cpp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1404699318796"/>
+=======
+<refactoring comment="Delete 8 resources" deleteContents="false" description="Delete 8 resources" element1="/3d_sphere" element2="/animation" element3="/assign_2_task1" element4="/assign_2_task2" element5="/assign1_task1" element6="/assign1_task2" element7="/lab1" element8="/simple" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="8" stamp="1405162504693"/>
+>>>>>>> b46575f7e93663c826c76b5c9cdc205fe40e3574
 </session>

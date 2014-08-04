@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 **** Build of configuration Debug for project examples ****
 
@@ -16,3 +17,11 @@ collect2: ld returned 1 exit status
 make: *** [examples] Error 1
 
 **** Build Finished ****
+=======
+01:01:58 **** Incremental Build of configuration Debug for project examples ****
+make all 
+make: Nothing to be done for `all'.
+
+01:01:58 Build Finished (took 121ms)
+
+>>>>>>> b46575f7e93663c826c76b5c9cdc205fe40e3574

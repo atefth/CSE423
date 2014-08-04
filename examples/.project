@@ -9,6 +9,7 @@
 			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
 			<triggers>clean,full,incremental,</triggers>
 			<arguments>
+<<<<<<< HEAD
 				<dictionary>
 					<key>?name?</key>
 					<value></value>
@@ -65,6 +66,8 @@
 					<key>org.eclipse.cdt.make.core.useDefaultBuildCmd</key>
 					<value>true</value>
 				</dictionary>
+=======
+>>>>>>> b46575f7e93663c826c76b5c9cdc205fe40e3574
 			</arguments>
 		</buildCommand>
 		<buildCommand>

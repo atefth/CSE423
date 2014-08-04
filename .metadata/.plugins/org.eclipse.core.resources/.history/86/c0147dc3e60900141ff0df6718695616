@@ -1,0 +1,110 @@
+#include<GL/glut.h>
+#include<math.h>
+
+int columns = 20;
+int rows = 20;
+
+double cameraAngle;
+double cameraAngleDelta;
+
+double cameraHeight;
+double cameraRadius;
+
+double rectAngle;
+
+int drag_x_origin;
+int drag_y_origin;
+int dragging = 0;
+
+void draw(){
+
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	glClearColor(0, 0, 0, 0);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+
+	gluLookAt(cameraRadius*cos(cameraAngle), cameraRadius*sin(cameraAngle), cameraHeight, 0,0,0, 0,0,1);
+	glMatrixMode(GL_MODELVIEW);
+
+	glColor3f(0.3, 0.3, 0.3);
+	glBegin(GL_LINES);{
+	for(int i=-10;i<=10;i++){
+		if(i==0)
+			continue;
+			glVertex3f(i*10, -100, 0);
+			glVertex3f(i*10,  100, 0);
+
+			glVertex3f(-100, i*10, 0);
+			glVertex3f( 100, i*10, 0);
+		}
+	}glEnd();
+
+	glColor3f(1, 1, 1);
+	glBegin(GL_LINES);{
+		glVertex3f(0, -150, 0);
+		glVertex3f(0,  150, 0);
+
+		glVertex3f(-150, 0, 0);
+		glVertex3f( 150, 0, 0);
+	}glEnd();
+
+	glutSwapBuffers();
+}
+
+void animate(){
+	cameraAngle += cameraAngleDelta;
+	rectAngle -= 1;
+	glutPostRedisplay();
+}
+
+void setCamera(){
+	cameraAngle = 0;
+	cameraAngleDelta = 0.012;
+	rectAngle = 0;
+	cameraHeight = 100;
+	cameraRadius = 150;
+
+	glClearColor(0, 0, 0, 0);
+	glMatrixMode(GL_PROJECTION);
+
+	glLoadIdentity();
+
+	gluPerspective(70, 1, 0.1, 10000.0);
+}
+
+void mouse_click(int button, int state, int x, int y) {
+    if(button == GLUT_LEFT_BUTTON) {
+        if(state == GLUT_DOWN) {
+            dragging = 1;
+            drag_x_origin = x;
+            drag_y_origin = y;
+        }
+        else
+            dragging = 0;
+    }
+}
+
+void mouse_move(int x, int y) {
+    if(dragging) {
+        cameraAngle += (y - drag_y_origin)*0.3;
+        cameraHeight += (x - drag_x_origin)*0.3;
+        drag_x_origin = x;
+        drag_y_origin = y;
+    }
+}
+
+int main(int argc, char **argv){
+	glutInit(&argc,argv);
+	glutInitWindowSize(500, 500);
+	glutInitWindowPosition(0, 0);
+	glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGB);
+	glutCreateWindow("Grids");
+	setCamera();
+	glEnable(GL_DEPTH_TEST);
+	glutDisplayFunc(draw);
+	//glutIdleFunc(animate);
+	glutMouseFunc(mouse_click);
+	glutMainLoop();
+}

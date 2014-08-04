@@ -1,3 +1,4 @@
+<<<<<<< HEAD:.metadata/.plugins/org.eclipse.cdt.ui/3d_sphere.build.log
 
 **** Build of configuration Debug for project 3d_sphere ****
 
@@ -12,5 +13,11 @@ Invoking: Cross G++ Linker
 g++  -o "3d_sphere"  ./main.o   -lGL -lglut
 Finished building target: 3d_sphere
  
+=======
+17:35:04 **** Incremental Build of configuration Debug for project animation ****
+make all 
+make: Nothing to be done for `all'.
 
-**** Build Finished ****
+17:35:04 Build Finished (took 67ms)
+>>>>>>> b46575f7e93663c826c76b5c9cdc205fe40e3574:.metadata/.plugins/org.eclipse.cdt.ui/animation.build.log
+
