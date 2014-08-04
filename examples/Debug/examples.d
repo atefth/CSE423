@@ -1,0 +1,1 @@
+examples.d: ../examples.cpp
